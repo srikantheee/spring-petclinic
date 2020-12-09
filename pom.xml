@@ -14,6 +14,12 @@
   </parent>
   <name>petclinic</name>
 
+    <scm>
+        <connection>scm:git:https://github.com/srikantheee/spring-petclinic.git</connection>
+        <developerConnection>scm:git:https://github.com/srikantheee/spring-petclinic.git</developerConnection>
+        <url>https://github.com/srikantheee/spring-petclinic.git</url>
+    </scm>
+
   <properties>
 
     <!-- Generic properties -->
@@ -265,6 +271,15 @@
           </dependency>
         </dependencies>
       </plugin>
+	<plugin>
+  		<groupId>org.apache.maven.plugins</groupId>
+   		<artifactId>maven-release-plugin</artifactId>
+   		<version>3.0.0-M1</version>
+  		 <configuration>
+     			<tagNameFormat>v@{project.version}</tagNameFormat>
+      			<autoVersionSubmodules>true</autoVersionSubmodules>
+  	 	</configuration>
+	</plugin>
     </plugins>
   </build>
 
