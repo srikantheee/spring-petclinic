@@ -18,6 +18,7 @@
         <connection>scm:git:https://github.com/srikantheee/spring-petclinic.git</connection>
         <developerConnection>scm:git:https://github.com/srikantheee/spring-petclinic.git</developerConnection>
         <url>https://github.com/srikantheee/spring-petclinic.git</url>
+        <tag>HEAD</tag>
     </scm>
 
   <properties>
